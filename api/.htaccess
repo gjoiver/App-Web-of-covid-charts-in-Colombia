@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /"WRITE YOUR NEW DATABASE NAME HERE"/
+RewriteRule ^index\.php$ - [L]
+.
+.
+.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /"api-covid"/index.php [L]
+</IfModule>

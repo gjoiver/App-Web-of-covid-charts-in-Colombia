@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/Chart.min.css">
+    
+    <title>Positivos por municipio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="http://localhost/api/">Casos Covid</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://localhost/api">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/api/positivos">Positivos por municipio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/api/recuperados">Recuperados por municipio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/api/fallecidos">Fallecidos por municipio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/api/sexo">Positivos por sexo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/api/edades">Positivos por edades</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <div class="container">       
+        <canvas id="myChart" width="400" height="250"></canvas> 
+    </div>
+    
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/Chart.js"></script>
+    <script src="js/graphicPositivos.js"></script>
+</body>
+</html>
